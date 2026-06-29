@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-half {
+      height: 50vh;
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: blue;
+      margin: 0;
+      padding: 0;
+    }
+.todo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+    .todo input {
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    button{
+        font-size:20px;
+        padding:10px;
+        cursor: pointer;
+        border-radius:2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-half">
+    <h1>ToDo-Lists</h1>
+    <div class="todo">
+      <input type="text" placeholder="Enter Task Here" class="input"/>
+<button type="button" onclick="add()" class="addbtn">Add-Task</button>
+<button type="button" onclick="list()" class="showlist">Your Tasks</button>
+    </div>
+  </div>
+  <ul class="taskslist"></ul>
+<script src="newtodo.js"></script>
+</body>
+</html>
